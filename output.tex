@@ -1,0 +1,96 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{datetime}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.3in} % taller text area to reduce bottom gap
+
+\raggedbottom
+\raggedright
+\setlength{\parskip}{1.4em} % space between paragraphs
+\setlength{\parindent}{0pt} % no paragraph indentation
+\linespread{1.15} % line spacing
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{3pt}\scshape\raggedright\Large\color{MidnightBlue}
+}{}{0em}{}[\vspace{3pt}\color{MidnightBlue}\titlerule\vspace{6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\letterHeading}[5]{
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large #1} & #5 \\  % Right side is date
+    #2 & \\
+    #3 & \\
+    #4 & \\
+    \end{tabular*}
+    \vspace{15pt}
+}
+
+\newcommand{\letterRecipient}[3]{
+    \textbf{\large To:} #1 \\
+    \textbf{\large Position:} #2 \\
+    \textbf{\large Company:} #3 \\
+    \vspace{12pt}
+}
+
+\newcommand{\letterSubject}[1]{
+    \textbf{\large Subject:} #1 \\
+    \vspace{15pt}
+}
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+    \letterHeading
+    {Mahdi Jellali}
+    {Sousse, Tunisia}
+    {+216 55 402 817 \\ \href{mailto:mahdijellali2001@gmail.com}{mahdijellali2001@gmail.com}}
+    {\href{https://github.com/mahdiJ2001}{github.com/mahdiJ2001} $|$ \href{https://concise-code-display.vercel.app/}{concise-code-display.vercel.app} $|$ \href{https://www.linkedin.com/in/mahdi-jellali/}{linkedin.com/in/mahdi-jellali}}
+    {\today}
+
+%-----------RECIPIENT-----------
+    \letterRecipient
+    {Hiring Manager}
+    {Backend Software Engineer}
+    {QuantEdge Analytics, 123 Financial Drive, New York, NY}
+
+%-----------SUBJECT-----------
+    \letterSubject{Application for Backend Software Engineer Position}
+
+%-----------BODY-----------
+    Dear Hiring Manager,
+
+    I am thrilled to apply for the Backend Software Engineer position at QuantEdge Analytics, where I can leverage my passion for building high-performance, scalable systems to drive real-time financial data processing. With a strong foundation in distributed systems, backend engineering, and applied mathematics, I am confident that my skills and experience make me an ideal fit for this role. I am particularly drawn to QuantEdge Analytics' mission to deliver innovative solutions for the financial industry, and I am excited about the opportunity to contribute my expertise to a team that shares my passion for technology and data-driven insights.
+
+    Throughout my academic and professional journey, I have developed a strong proficiency in Java, Go, and C++, with a solid understanding of concurrency and multithreading. My experience with distributed systems, message brokers (Kafka, RabbitMQ), and database technologies (PostgreSQL, Redis) has prepared me to design and implement scalable data pipelines and microservices. I am also familiar with containerization tools (Docker, Kubernetes) and cloud infrastructure (AWS), which I believe are essential for building high-performance systems. Notably, my experience with projects such as the Distributed Log Processing System, which utilized Go, Kafka, and Docker, has given me hands-on experience with building real-time distributed systems.
+
+    As a collaborative and driven individual, I thrive in fast-paced, data-driven environments. My experience as a Backend Developer Intern at Wevioo and Software Engineering Intern at TechLabs Tunisia has taught me the importance of working closely with cross-functional teams to integrate APIs, storage systems, and analytics components. I am confident that my problem-solving skills, adaptability, and strong work ethic would allow me to make a meaningful contribution to your team. I am excited about the prospect of taking on new challenges, supporting your objectives, and growing alongside your organization while embracing opportunities to learn, develop, and contribute in a professional environment.
+
+    Thank you for considering my application. I would be delighted to discuss in greater detail how my dedication, enthusiasm, and personal qualities align with your needs, and how I can contribute meaningfully to your team. I look forward to the possibility of joining QuantEdge Analytics and helping drive its mission forward with commitment, passion, and integrity.
+
+    Sincerely,\\[12pt]
+
+    Mahdi Jellali
+
+\end{document}
