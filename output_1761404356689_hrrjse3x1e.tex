@@ -1,0 +1,96 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{datetime}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.3in} % taller text area to reduce bottom gap
+
+\raggedbottom
+\raggedright
+\setlength{\parskip}{1.4em} % space between paragraphs
+\setlength{\parindent}{0pt} % no paragraph indentation
+\linespread{1.15} % line spacing
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{3pt}\scshape\raggedright\Large\color{MidnightBlue}
+}{}{0em}{}[\vspace{3pt}\color{MidnightBlue}\titlerule\vspace{6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\letterHeading}[5]{
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large #1} & #5 \\  % Right side is date
+    #2 & \\
+    #3 & \\
+    #4 & \\
+    \end{tabular*}
+    \vspace{15pt}
+}
+
+\newcommand{\letterRecipient}[3]{
+    \textbf{\large To:} #1 \\
+    \textbf{\large Position:} #2 \\
+    \textbf{\large Company:} #3 \\
+    \vspace{12pt}
+}
+
+\newcommand{\letterSubject}[1]{
+    \textbf{\large Subject:} #1 \\
+    \vspace{15pt}
+}
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+    \letterHeading
+    {Mahdi Jellali}
+    {Your Location}
+    {+21655402817 \\ \href{mailto:mahdijellali2001@gmail.com}{mahdijellali2001@gmail.com}}
+    {https://github.com/mahdiJ2001}
+    {October 25, 2025}
+
+%-----------RECIPIENT-----------
+    \letterRecipient
+    {Test 1}
+    {Test 1 }
+    {NeuroGrid Technologies, 123 Innovation Drive, Silicon Valley, CA}
+
+%-----------SUBJECT-----------
+    \letterSubject{Application for Machine Learning Engineer Position}
+
+%-----------BODY-----------
+    Dear Test 1,
+
+    I am thrilled to apply for the Machine Learning Engineer position at NeuroGrid Technologies, where I can leverage my passion for AI and machine learning to drive innovation and excellence. With a strong foundation in distributed systems, backend engineering, and applied mathematics, I am confident that I can make a meaningful contribution to your team. My experience in developing and deploying scalable machine learning models, building data pipelines, and optimizing model inference for latency, throughput, and cost efficiency aligns perfectly with the job requirements.
+
+    Throughout my experiences, I have demonstrated my ability to work collaboratively with cross-functional teams, including researchers, data engineers, and software developers, to turn experimental ideas into production-grade systems. My projects, such as the Medical Image Classifier and the AI Resume Analyzer, showcase my proficiency in Python, TensorFlow, and FastAPI, as well as my capacity to design and implement effective data preprocessing workflows and model serving architectures. I am excited about the prospect of joining NeuroGrid Technologies and contributing my skills and experience to enhance automation and intelligence across your suite of cloud-based products.
+
+    I am particularly drawn to NeuroGrid Technologies' mission to push the boundaries of machine learning and its applications. Your organization's commitment to innovation, excellence, and collaboration resonates strongly with my own values and principles. I am confident that my strong analytical thinking, debugging skills, and ability to work in agile environments make me an ideal fit for your team. I look forward to the opportunity to discuss my application and how I can contribute to the success of NeuroGrid Technologies.
+
+    Thank you for considering my application. I am eager to bring my skills and experience to NeuroGrid Technologies and contribute to the development of cutting-edge machine learning solutions.
+
+    Sincerely,\\[12pt]
+
+    Mahdi Jellali
+
+\end{document}
