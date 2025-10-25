@@ -1,36 +1,96 @@
-\documentclass[11pt,a4paper]{letter}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{geometry}
-\geometry{left=1in, right=1in, top=1in, bottom=1in}
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{datetime}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.3in} % taller text area to reduce bottom gap
+
+\raggedbottom
+\raggedright
+\setlength{\parskip}{1.4em} % space between paragraphs
+\setlength{\parindent}{0pt} % no paragraph indentation
+\linespread{1.15} % line spacing
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{3pt}\scshape\raggedright\Large\color{MidnightBlue}
+}{}{0em}{}[\vspace{3pt}\color{MidnightBlue}\titlerule\vspace{6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\letterHeading}[5]{
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large #1} & #5 \\  % Right side is date
+    #2 & \\
+    #3 & \\
+    #4 & \\
+    \end{tabular*}
+    \vspace{15pt}
+}
+
+\newcommand{\letterRecipient}[3]{
+    \textbf{\large To:} #1 \\
+    \textbf{\large Position:} #2 \\
+    \textbf{\large Company:} #3 \\
+    \vspace{12pt}
+}
+
+\newcommand{\letterSubject}[1]{
+    \textbf{\large Subject:} #1 \\
+    \vspace{15pt}
+}
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%
 
 \begin{document}
 
-\begin{letter}{mahdijellali2001@gmail.com}
+%----------HEADING----------
+    \letterHeading
+    {Mahdi Jellali}
+    {Sousse, Tunisia}
+    {+216 55 402 817 \\ \href{mailto:mahdijellali2001@gmail.com}{mahdijellali2001@gmail.com}}
+    {\href{https://github.com/mahdiJ2001}{github.com/mahdiJ2001} $|$ \href{https://concise-code-display.vercel.app/}{concise-code-display.vercel.app} $|$ \href{https://www.linkedin.com/in/mahdi-jellali/}{linkedin.com/in/mahdi-jellali}}
+    {\today}
 
-\opening{Dear Hiring Manager,}
+%-----------RECIPIENT-----------
+    \letterRecipient
+    {Hiring Manager}
+    {Machine Learning Engineer}
+    {Visionary Labs, 123 Innovation Drive, Silicon Valley, CA}
 
-Subject: Application for AI Software Engineer position
+%-----------SUBJECT-----------
+    \letterSubject{Application for Machine Learning Engineer Position}
 
-Position: AI Software Engineer
-Company: NeuroGrid Technologies
+%-----------BODY-----------
+    Dear Hiring Manager,
 
-Dear Hiring Manager,
+    I am thrilled to apply for the Machine Learning Engineer position at Visionary Labs, where I can leverage my passion for AI and cloud computing to enhance automation and intelligence across your suite of cloud-based products. With a strong background in distributed systems, backend engineering, and applied mathematics, I am confident that my skills and experience make me an ideal fit for this role. I am particularly drawn to Visionary Labs' commitment to innovation and excellence, and I am excited about the opportunity to contribute to a team that shares my values.
 
-I a excited to apply for the AI Software Engineer position at NeuroGrid Technologies, where I can leverage my passion for developing intelligent systems and contribute to the advancement of predictive analytics, recommendation engines, and autonomous decision-making tools. With a strong foundation in deep learning frameworks, including TensorFlow and PyTorch, I am confident in my ability to design and implement production-grade AI models for NLP, computer vision, and forecasting tasks. My experience with deploying ML models to cloud environments, such as AWS SageMaker, has prepared me to collaborate with data scientists, backend developers, and cloud engineers to deploy machine learning models at scale.
+    Throughout my experiences, I have developed a solid foundation in machine learning, with a focus on building and deploying scalable models for image recognition, anomaly detection, and predictive analytics. Notably, I have worked on projects such as the Medical Image Classifier, where I built a CNN to detect lung diseases from X-rays with 92% accuracy, and deployed it with Flask. I am well-versed in ML frameworks such as TensorFlow and PyTorch, and I have experience with MLOps tools like MLflow and Kubeflow. I am also familiar with cloud infrastructure, having worked with AWS, GCP, and Azure, and I have experience with containerization using Docker and orchestration using Kubernetes.
 
-Throughout my experiences, I have focused on working closely with others to achieve meaningful outcomes. I take a thoughtful approach to challenges, ensuring that each responsibility is handled with care, attention, and consistency. I am motivated by opportunities to make a tangible difference and to support projects that provide value and impact to the organization. My projects, such as the AI Resume Analyzer and the Medical Image Classifier, demonstrate my ability to apply AI and ML concepts to real-world problems, and I am excited about the prospect of bringing my skills and experience to NeuroGrid Technologies.
+    I am a strong believer in the importance of collaboration and teamwork, and I have a proven track record of working effectively with cross-functional teams to achieve common goals. My experience as a Backend Developer Intern at Wevioo, where I contributed to a microservices-based patient management system using Spring Boot, Kafka, and gRPC, has taught me the value of asynchronous event handling and optimization. I am also proud of my achievements at TechLabs Tunisia, where I developed RESTful APIs in Java for data synchronization between legacy and cloud systems, improving response times by 30% through query optimization.
 
-I am particularly inspired by NeuroGrid Technologies' mission to develop intelligent systems that power predictive analytics and autonomous decision-making tools. Your organization's values resonate strongly with my own principles of collaboration, dedication, and continuous improvement. I am confident that my adaptability, strong work ethic, and commitment to excellence would allow me to contribute meaningfully to your team. I am excited by the prospect of taking on new challenges, supporting your objectives, and growing alongside your organization while embracing opportunities to learn, develop, and contribute in a professional environment.
+    I am eager to bring my skills and experience to Visionary Labs and contribute to the development of innovative machine learning models that drive business value. Thank you for considering my application. I would be delighted to discuss in greater detail how my dedication, enthusiasm, and personal qualities align with your needs, and how I can contribute meaningfully to your team. I look forward to the possibility of joining Visionary Labs and helping drive its mission forward with commitment, passion, and integrity.
 
-Thank you for considering my application. I would be delighted to discuss in greater detail how my dedication, enthusiasm, and personal qualities align with your needs, and how I can contribute meaningfully to your team. I look forward to the possibility of joining NeuroGrid Technologies and helping drive its mission forward with commitment, passion, and integrity.
+    Sincerely,\\[12pt]
 
-Sincerely,\\[12pt]
-
-Mahdi Jellali
-
-\closing{Sincerely,\\Your Name}
-
-\end{letter}
+    Mahdi Jellali
 
 \end{document}
