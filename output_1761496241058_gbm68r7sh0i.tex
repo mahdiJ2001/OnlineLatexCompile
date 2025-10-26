@@ -1,0 +1,96 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{datetime}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.3in} % taller text area to reduce bottom gap
+
+\raggedbottom
+\raggedright
+\setlength{\parskip}{1.4em} % space between paragraphs
+\setlength{\parindent}{0pt} % no paragraph indentation
+\linespread{1.15} % line spacing
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{3pt}\scshape\raggedright\Large\color{MidnightBlue}
+}{}{0em}{}[\vspace{3pt}\color{MidnightBlue}\titlerule\vspace{6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\letterHeading}[5]{
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large #1} & #5 \\  % Right side is date
+    #2 & \\
+    #3 & \\
+    #4 & \\
+    \end{tabular*}
+    \vspace{15pt}
+}
+
+\newcommand{\letterRecipient}[3]{
+    \textbf{\large To:} #1 \\
+    \textbf{\large Position:} #2 \\
+    \textbf{\large Company:} #3 \\
+    \vspace{12pt}
+}
+
+\newcommand{\letterSubject}[1]{
+    \textbf{\large Subject:} #1 \\
+    \vspace{15pt}
+}
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+    \letterHeading
+    {Mahdi Jellali}
+    {Sousse, Tunisia}
+    {+216 55 402 817 \\ \href{mailto:mahdijellali2001@gmail.com}{mahdijellali2001@gmail.com}}
+    {\href{https://github.com/mahdiJ2001}{github.com/mahdiJ2001} $|$ \href{https://concise-code-display.vercel.app/}{concise-code-display.vercel.app} $|$ \href{https://www.linkedin.com/in/mahdi-jellali/}{linkedin.com/in/mahdi-jellali}}
+    {\today}
+
+%-----------RECIPIENT-----------
+    \letterRecipient
+    {Hiring Manager}
+    {AI Software Engineer}
+    {Synaptech Labs, 123 Innovation Drive, Silicon Valley, CA}
+
+%-----------SUBJECT-----------
+    \letterSubject{Application for AI Software Engineer Position}
+
+%-----------BODY-----------
+    Dear Hiring Manager,
+
+    I am thrilled to apply for the AI Software Engineer role at Synaptech Labs, where I can leverage my passion for machine learning and data-driven intelligence to build cutting-edge systems. With a strong foundation in deep learning frameworks, including TensorFlow, and a proficiency in Python, I am confident in my ability to design, train, and deploy production-ready AI models that solve complex business problems at scale.
+
+    Throughout my experiences, I have developed a knack for collaborating with cross-functional teams to translate research into deployable solutions. My projects, such as the AI Resume Analyzer and Medical Image Classifier, demonstrate my ability to apply machine learning concepts to real-world problems. I am particularly excited about the opportunity to work alongside data scientists, cloud engineers, and backend developers to drive innovation and growth at Synaptech Labs.
+
+    I am impressed by Synaptech Labs' commitment to pushing the boundaries of AI and its applications. I am eager to contribute my skills and experience to help advance the company's mission and goals. With a strong understanding of data preprocessing, feature engineering, and model evaluation, I am well-equipped to monitor model performance, implement retraining workflows, and ensure reliability in production. I am also familiar with cloud platforms, including AWS, and containerization tools, such as Docker, which I believe are essential for the success of this role.
+
+    Thank you for considering my application. I would be delighted to discuss in greater detail how my dedication, enthusiasm, and personal qualities align with your needs, and how I can contribute meaningfully to your team. I look forward to the possibility of joining Synaptech Labs and helping drive its mission forward with commitment, passion, and integrity.
+
+    Sincerely,\\[12pt]
+
+    Mahdi Jellali
+
+\end{document}
