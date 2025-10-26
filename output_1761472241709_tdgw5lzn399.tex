@@ -1,0 +1,96 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{datetime}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.3in} % taller text area to reduce bottom gap
+
+\raggedbottom
+\raggedright
+\setlength{\parskip}{1.4em} % space between paragraphs
+\setlength{\parindent}{0pt} % no paragraph indentation
+\linespread{1.15} % line spacing
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{3pt}\scshape\raggedright\Large\color{MidnightBlue}
+}{}{0em}{}[\vspace{3pt}\color{MidnightBlue}\titlerule\vspace{6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\letterHeading}[5]{
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large #1} & #5 \\  % Right side is date
+    #2 & \\
+    #3 & \\
+    #4 & \\
+    \end{tabular*}
+    \vspace{15pt}
+}
+
+\newcommand{\letterRecipient}[3]{
+    \textbf{\large To:} #1 \\
+    \textbf{\large Position:} #2 \\
+    \textbf{\large Company:} #3 \\
+    \vspace{12pt}
+}
+
+\newcommand{\letterSubject}[1]{
+    \textbf{\large Subject:} #1 \\
+    \vspace{15pt}
+}
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+    \letterHeading
+    {Mahdi Jellali}
+    {Sousse, Tunisia}
+    {+216 55 402 817 \\ \href{mailto:mahdijellali2001@gmail.com}{mahdijellali2001@gmail.com}}
+    {\href{https://github.com/mahdiJ2001}{github.com/mahdiJ2001} $|$ \href{https://concise-code-display.vercel.app/}{concise-code-display.vercel.app} $|$ \href{https://www.linkedin.com/in/mahdi-jellali/}{linkedin.com/in/mahdi-jellali}}
+    {\today}
+
+%-----------RECIPIENT-----------
+    \letterRecipient
+    {Hiring Manager}
+    {Machine Learning Engineer}
+    {NeuroGrid Technologies, 123 Innovation Drive, Silicon Valley, CA}
+
+%-----------SUBJECT-----------
+    \letterSubject{Application for Machine Learning Engineer Position}
+
+%-----------BODY-----------
+    Dear Hiring Manager,
+
+    I am thrilled to apply for the Machine Learning Engineer role at NeuroGrid Technologies, where I can leverage my passion for building high-quality software systems and contributing to innovative projects. With a strong foundation in computer science and software engineering, I am confident that my skills and experience make me an ideal fit for this position. I am particularly drawn to NeuroGrid's commitment to collaboration, continuous growth, and pushing the boundaries of what is possible with machine learning.
+
+    Throughout my academic and professional journey, I have developed a solid understanding of algorithms, data structures, and software design principles. My experience as a Backend Developer Intern at Wevioo, where I contributed to a microservices-based patient management system using Spring Boot, Kafka, and gRPC, has given me a deep appreciation for the importance of scalable, reliable, and efficient applications. I have also had the opportunity to work on various projects, including an AI Resume Analyzer using Python, FastAPI, and Transformers, and a Medical Image Classifier using Python, TensorFlow, and CNN, which has further solidified my understanding of machine learning principles and their applications.
+
+    I am excited about the prospect of joining NeuroGrid Technologies and contributing my skills and experience to the development of cutting-edge machine learning solutions. I am impressed by the company's commitment to innovation, collaboration, and continuous learning, and I am confident that my passion, work ethic, and dedication would make me a valuable asset to the team. I look forward to the opportunity to discuss my application and how I can contribute to the success of NeuroGrid Technologies.
+
+    Thank you for considering my application. I am eager to bring my skills and experience to NeuroGrid Technologies and contribute to the development of innovative machine learning solutions.
+
+    Sincerely,\\[12pt]
+
+    Mahdi Jellali
+
+\end{document}
