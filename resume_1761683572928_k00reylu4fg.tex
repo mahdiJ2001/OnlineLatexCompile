@@ -1,0 +1,181 @@
+```latex
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+\textbf{\Huge \scshape Mahdi Jellali} \\ \vspace{1pt}
+\small
++21655402817 \quad
+\href{mailto:mahdijellali2001@gmail.com}{mahdijellali2001@gmail.com} \quad
+\href{https://github.com/mahdiJ2001}{github.com/mahdiJ2001} \quad
+\href{https://concise-code-display.vercel.app/}{concise-code-display.vercel.app} \quad
+\href{https://www.linkedin.com/in/mahdi-jellali/}{linkedin.com/in/mahdi-jellali}
+\end{center}
+
+\vspace{10pt}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{National School of Engineers of Tunis (ENIT)}{Tunis, Tunisia}
+{Bachelor’s in Software Engineering}{2021 -- 2025}
+\resumeSubheading
+{Preparatory Institute for Engineering Studies of Sousse (IPEIS)}{Sousse, Tunisia}
+{Preparatory Cycle in Mathematics and Physics}{2019 -- 2021}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Backend Developer Intern}{2024}
+{Wevioo}{Remote}
+\resumeItemListStart
+\resumeItem{Contributed to a microservices-based patient management system using \textbf{Spring Boot}, \textbf{Kafka}, and \textbf{gRPC}}
+\resumeItem{Improved backend performance by implementing asynchronous event handling and optimizing serialization}
+\resumeItemListEnd
+\resumeSubheading
+{Software Engineering Intern}{2023}
+{TechLabs Tunisia}{Tunisia}
+\resumeItemListStart
+\resumeItem{Developed \textbf{RESTful APIs} in \textbf{Java} for data synchronization between legacy and cloud systems}
+\resumeItem{Improved response times by \textbf{30\%} through query optimization}
+\resumeItemListEnd
+\resumeSubheading
+{IoT Developer Intern}{2022}
+{SmartIoT Solutions}{Tunisia}
+\resumeItemListStart
+\resumeItem{Built firmware for environmental sensors using \textbf{C++} and integrated real-time data streaming to \textbf{AWS IoT Core} with a monitoring dashboard}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Dynamic Financial Statement Platform}}{Ongoing}
+\resumeItemListStart
+\resumeItem{Developed a web platform for creating and validating dynamic financial statements using \textbf{Java}, \textbf{Spring Boot}, and \textbf{Angular}}
+\resumeItem{Implemented \textbf{DMN} rule evaluation for financial compliance}
+\resumeItem{Integrated \textbf{PostgreSQL} for data persistence and querying}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{AI Resume Analyzer}}{2023}
+\resumeItemListStart
+\resumeItem{Created an AI-powered resume analyzer using \textbf{Python}, \textbf{FastAPI}, and \textbf{Transformers}}
+\resumeItem{Implemented \textbf{NLP} analysis to evaluate resume-job description matching}
+\resumeItem{Deployed the application using \textbf{Flask} for web interface}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Cloud Data Pipeline}}{2023}
+\resumeItemListStart
+\resumeItem{Designed an \textbf{ETL} pipeline for large-scale financial data using \textbf{Python}, \textbf{Apache Airflow}, \textbf{AWS S3}, and \textbf{Redshift}}
+\resumeItem{Processed and transformed financial data for analytics and reporting}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Quant Simulation Engine}}{2022}
+\resumeItemListStart
+\resumeItem{Built a high-performance trading simulation engine using \textbf{C++} and \textbf{ZeroMQ}}
+\resumeItem{Implemented \textbf{Redis} for real-time data storage and retrieval}
+\resumeItem{Developed algorithms for backtesting trading strategies}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages}{: Java, Python, C++, Go, JavaScript, SQL, HTML/CSS} \\
+\textbf{Frameworks}{: Spring Boot, FastAPI, Angular, React, Node.js} \\
+\textbf{Developer Tools}{: Git, Docker, TravisCI, AWS, Redis, Kafka, gRPC} \\
+\textbf{Libraries}{: TensorFlow, pandas, NumPy, Matplotlib} \\
+}}
+\end{itemize}
+
+\end{document}
+```
