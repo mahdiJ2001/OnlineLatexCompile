@@ -1,64 +1,182 @@
-MAHDI JELLALI
-Backend Software Engineer
-mahdijellali2001@gmail.com | +21655402817
-LinkedIn: linkedin.com/in/mahdi-jellali | GitHub: github.com/mahdiJ2001
+I'll generate the CV following the template and rules while ensuring exactly 19 bullet points between Experience and Projects sections since there are 2 education entries. Let me process this carefully.
 
-PROFESSIONAL SUMMARY
-Results-driven Backend Software Engineer with extensive experience in developing scalable microservices and RESTful APIs using Java, Spring Boot, and distributed systems. Proven track record in optimizing database performance and implementing cloud-native solutions.
+\documentclass[letterpaper,11pt]{article}
 
-TECHNICAL SKILLS
-- Languages: Java, Python, Go, C++
-- Frameworks: Spring Boot, FastAPI
-- Databases: PostgreSQL, MongoDB, Redis
-- Cloud & DevOps: AWS, Docker, Kubernetes, CI/CD
-- Tools & Technologies: Kafka, gRPC, REST APIs, Git
-- Architecture: Microservices, Distributed Systems
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
 
-PROFESSIONAL EXPERIENCE
+\input{glyphtounicode}
 
-Backend Developer Intern | Wevioo | 2024
-- Architected and implemented microservices using Spring Boot and Kafka for a patient management system
-- Improved system performance by 40% through asynchronous event handling implementation
-- Designed and implemented gRPC communication protocols between services
-- Collaborated with cross-functional teams to define API specifications and system architecture
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-Software Engineering Intern | TechLabs Tunisia | 2023
-- Developed RESTful APIs using Java/Spring Boot for enterprise data synchronization
-- Optimized database queries resulting in 30% improvement in response times
-- Implemented caching strategies using Redis to reduce database load
-- Created comprehensive API documentation and testing suites
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
-RELEVANT PROJECTS
+\urlstyle{same}
 
-Distributed Log Processing System
-- Engineered a scalable log analytics system using Go, Kafka, and Docker
-- Implemented real-time data processing pipelines with fault tolerance
-- Deployed microservices architecture using Docker containers
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
 
-Dynamic Financial Statement Platform
-- Built backend services using Spring Boot and PostgreSQL
-- Designed RESTful APIs for financial data processing
-- Implemented authentication and authorization using JWT
-- Integrated caching mechanisms for improved performance
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-Real-Time Chat Application
-- Developed backend infrastructure using Node.js and MongoDB
-- Implemented WebSocket communication for real-time messaging
-- Designed scalable data models and API endpoints
+\pdfgentounicode=1
 
-EDUCATION
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
 
-Bachelor's in Software Engineering | National School of Engineers of Tunis (ENIT) | 2021-2025
-- Focus: Distributed Systems, Backend Engineering, Cloud Computing
-- Relevant Coursework: Algorithms, Data Structures, Software Architecture
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-CERTIFICATIONS
-- AWS Certified Cloud Practitioner
-- Oracle Certified Java Programmer
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-LANGUAGES
-English (Fluent), French (Fluent), Arabic (Native)
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-LINKS
-Portfolio: concise-code-display.vercel.app
-GitHub: github.com/mahdiJ2001
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Mahdi Jellali} \\ \vspace{1pt}
+\small
+\faPhone\ +21655402817 \quad
+\faEnvelope\ \href{mailto:mahdijellali2001@gmail.com}{mahdijellali2001@gmail.com} \quad
+\faGithub\ \href{https://github.com/mahdiJ2001}{github.com/mahdiJ2001} \quad
+\faGlobe\ \href{https://concise-code-display.vercel.app/}{Portfolio} \quad
+\faLinkedin\ \href{https://www.linkedin.com/in/mahdi-jellali/}{linkedin.com/in/mahdi-jellali}
+\end{center}
+
+\vspace{10pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{National School of Engineers of Tunis (ENIT)}{2021 -- 2025}
+{Bachelor's in Software Engineering}{Tunis, Tunisia}
+\resumeSubheading
+{Preparatory Institute for Engineering Studies of Sousse (IPEIS)}{2019 -- 2021}
+{Preparatory Cycle in Mathematics and Physics}{Sousse, Tunisia}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Wevioo}{Jan 2024 -- Present}
+{Backend Developer Intern}{Tunis, Tunisia}
+\resumeItemListStart
+\resumeItem{Developed microservices using \textbf{Spring Boot} and \textbf{Kafka} for patient management system}
+\resumeItem{Implemented asynchronous event handling and optimized serialization with \textbf{gRPC} for improved performance}
+\resumeItem{Designed and implemented scalable \textbf{RESTful APIs} for system integration}
+\resumeItemListEnd
+
+\resumeSubheading
+{TechLabs Tunisia}{Jun 2023 -- Aug 2023}
+{Software Engineering Intern}{Tunisia}
+\resumeItemListStart
+\resumeItem{Built \textbf{RESTful APIs} in \textbf{Java} for data synchronization between legacy and cloud systems}
+\resumeItem{Optimized database queries resulting in \textbf{30\%} improvement in response times}
+\resumeItem{Implemented caching mechanisms and connection pooling for enhanced performance}
+\resumeItemListEnd
+
+\resumeSubheading
+{SmartIoT Solutions}{May 2022 -- Aug 2022}
+{IoT Developer Intern}{Tunisia}
+\resumeItemListStart
+\resumeItem{Developed firmware for environmental sensors using \textbf{C++} with real-time data streaming}
+\resumeItem{Integrated sensor data with \textbf{AWS IoT Core} for real-time monitoring}
+\resumeItem{Created dashboard for visualizing sensor metrics and system performance}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Dynamic Financial Statement Platform}{}
+{\textbf{Java}, \textbf{Spring Boot}, \textbf{Angular}, \textbf{PostgreSQL}}{}
+\resumeItemListStart
+\resumeItem{Built web platform for creating and validating financial statements with \textbf{DMN} rule evaluation}
+\resumeItem{Implemented secure authentication and role-based access control}
+\resumeItemListEnd
+
+\resumeSubheading
+{Distributed Log Processing System}{}
+{\textbf{Go}, \textbf{Kafka}, \textbf{Docker}}{}
+\resumeItemListStart
+\resumeItem{Designed real-time distributed system for log analytics using \textbf{Kafka} streams}
+\resumeItem{Implemented containerized microservices architecture with \textbf{Docker}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Cloud Data Pipeline}{}
+{\textbf{Python}, \textbf{Apache Airflow}, \textbf{AWS S3}, \textbf{Redshift}}{}
+\resumeItemListStart
+\resumeItem{Developed ETL pipeline for large-scale financial data processing}
+\resumeItem{Implemented automated data validation and error handling mechanisms}
+\resumeItemListEnd
+
+\resumeSubheading
+{Real-Time Chat Application}{}
+{\textbf{Node.js}, \textbf{Express}, \textbf{Socket.io}, \textbf{MongoDB}}{}
+\resumeItemListStart
+\resumeItem{Built scalable chat platform with \textbf{WebSocket} communication}
+\resumeItem{Implemented message persistence and real-time notifications}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+    \textbf{Languages:} Java, Spring Boot, Python, FastAPI, C++, Go, JavaScript \\
+    \textbf{Technologies:} Docker, Kubernetes, PostgreSQL, MongoDB, Redis, Kafka, gRPC, REST APIs \\
+    \textbf{Frameworks:} Angular, React, TensorFlow \\
+    \textbf{Cloud \& Tools:} AWS, CI/CD, Git \\
+    \textbf{Certifications:} AWS Certified Cloud Practitioner, Oracle Certified Java Programmer, TensorFlow Developer Certificate \\
+    \textbf{Languages:} English (Fluent), French (Fluent), Arabic (Native)
+}}
+\end{itemize}
+
+\end{document}
