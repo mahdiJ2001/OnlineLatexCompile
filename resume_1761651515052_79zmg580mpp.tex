@@ -1,0 +1,167 @@
+Let me help you generate a CV that matches the template exactly. First, I'll analyze the profile:
+
+Education entries: 2 (ENIT and IPEIS)
+Target bullet count: 19 (due to 2 education entries)
+
+Let me generate the LaTeX code with exactly 19 bullets distributed between Experience and Projects sections:
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Mahdi Jellali} \\ \vspace{1pt}
+\small
+\faPhone\ +21655402817 \quad
+\faEnvelope\ \href{mailto:mahdijellali2001@gmail.com}{mahdijellali2001@gmail.com} \quad
+\faGithub\ \href{https://github.com/mahdiJ2001}{github.com/mahdiJ2001} \quad
+\faLinkedin\ \href{https://www.linkedin.com/in/mahdi-jellali/}{linkedin.com/in/mahdi-jellali}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{National School of Engineers of Tunis (ENIT)}{2021 -- 2025}
+{Bachelor's in Software Engineering}{Tunis, Tunisia}
+\resumeSubheading
+{Preparatory Institute for Engineering Studies of Sousse (IPEIS)}{2019 -- 2021}
+{Preparatory Cycle in Mathematics and Physics}{Sousse, Tunisia}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Wevioo}{Jan 2024 -- Present}
+{Backend Developer Intern}{Tunis, Tunisia}
+\resumeItemListStart
+\resumeItem{Developed microservices using \textbf{Spring Boot} and \textbf{Kafka} for a patient management system}
+\resumeItem{Implemented asynchronous event handling with \textbf{gRPC} for improved system performance}
+\resumeItem{Designed and optimized data serialization patterns for efficient communication between services}
+\resumeItemListEnd
+
+\resumeSubheading
+{TechLabs Tunisia}{June 2023 -- Aug 2023}
+{Software Engineering Intern}{Tunisia}
+\resumeItemListStart
+\resumeItem{Built \textbf{RESTful APIs} using \textbf{Java} for seamless data synchronization between systems}
+\resumeItem{Optimized database queries resulting in \textbf{30\%} improvement in response times}
+\resumeItem{Implemented caching mechanisms using \textbf{Redis} for frequently accessed data}
+\resumeItemListEnd
+
+\resumeSubheading
+{SmartIoT Solutions}{May 2022 -- Aug 2022}
+{IoT Developer Intern}{Tunisia}
+\resumeItemListStart
+\resumeItem{Developed firmware for environmental sensors using \textbf{C++} and \textbf{AWS IoT Core}}
+\resumeItem{Created real-time monitoring dashboard for sensor data visualization}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Dynamic Financial Statement Platform} $|$ \textbf{Java, Spring Boot, Angular, PostgreSQL}}{2023}
+\resumeItemListStart
+\resumeItem{Built scalable web platform for creating and validating financial statements with DMN rules}
+\resumeItem{Implemented secure authentication and role-based access control}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Distributed Log Processing System} $|$ \textbf{Go, Kafka, Docker}}{2023}
+\resumeItemListStart
+\resumeItem{Developed real-time log analytics system using \textbf{Kafka} streams and containerization}
+\resumeItem{Implemented fault-tolerant architecture with message replay capabilities}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Cloud Data Pipeline} $|$ \textbf{Python, AWS S3, Redshift}}{2023}
+\resumeItemListStart
+\resumeItem{Designed ETL pipeline for large-scale data processing using \textbf{AWS} services}
+\resumeItem{Implemented automated data validation and error handling mechanisms}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Real-Time Chat Application} $|$ \textbf{Node.js, Express, Socket.io, MongoDB}}{2022}
+\resumeItemListStart
+\resumeItem{Built scalable chat platform with \textbf{WebSocket} communication and persistent storage}
+\resumeItem{Implemented message queuing for handling high-volume real-time communications}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+    \textbf{Languages:}{ Java, Python, C++, Go, JavaScript} \\
+    \textbf{Frameworks:}{ Spring Boot, FastAPI, Angular, React, Node.js} \\
+    \textbf{Databases:}{ PostgreSQL, MongoDB, Redis} \\
+    \textbf{Tools \& Technologies:}{ Docker, Kubernetes, AWS, Kafka, gRPC, Git, CI/CD} \\
+    \textbf{Certifications:}{ AWS Certified Cloud Practitioner, Oracle Certified Java Programmer, TensorFlow Developer Certificate}
+}}
+\end{itemize}
+
+\end{document}
