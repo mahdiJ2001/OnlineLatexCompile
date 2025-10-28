@@ -1,5 +1,3 @@
-I'll generate the CV following the template and rules while ensuring exactly 19 bullet points between Experience and Projects sections since there are 2 education entries. Let me process this carefully.
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -104,78 +102,74 @@ I'll generate the CV following the template and rules while ensuring exactly 19 
 
 \section{Experience}
 \resumeSubHeadingListStart
-\resumeSubheading
-{Wevioo}{Jan 2024 -- Present}
+\resumeSubheading{Wevioo}{2024}
 {Backend Developer Intern}{Tunis, Tunisia}
 \resumeItemListStart
 \resumeItem{Developed microservices using \textbf{Spring Boot} and \textbf{Kafka} for patient management system}
-\resumeItem{Implemented asynchronous event handling and optimized serialization with \textbf{gRPC} for improved performance}
-\resumeItem{Designed and implemented scalable \textbf{RESTful APIs} for system integration}
+\resumeItem{Implemented \textbf{gRPC} communication between services, improving inter-service latency by \textbf{40\%}}
+\resumeItem{Designed asynchronous event handling system for improved backend performance and scalability}
 \resumeItemListEnd
 
-\resumeSubheading
-{TechLabs Tunisia}{Jun 2023 -- Aug 2023}
-{Software Engineering Intern}{Tunisia}
+\resumeSubheading{TechLabs Tunisia}{2023}
+{Software Engineering Intern}{Tunis, Tunisia}
 \resumeItemListStart
-\resumeItem{Built \textbf{RESTful APIs} in \textbf{Java} for data synchronization between legacy and cloud systems}
+\resumeItem{Built \textbf{RESTful APIs} in \textbf{Java} for seamless data synchronization between legacy and cloud systems}
 \resumeItem{Optimized database queries resulting in \textbf{30\%} improvement in response times}
-\resumeItem{Implemented caching mechanisms and connection pooling for enhanced performance}
+\resumeItem{Implemented caching strategy using \textbf{Redis} to reduce database load}
 \resumeItemListEnd
 
-\resumeSubheading
-{SmartIoT Solutions}{May 2022 -- Aug 2022}
-{IoT Developer Intern}{Tunisia}
+\resumeSubheading{SmartIoT Solutions}{2022}
+{IoT Developer Intern}{Tunis, Tunisia}
 \resumeItemListStart
 \resumeItem{Developed firmware for environmental sensors using \textbf{C++} with real-time data streaming}
-\resumeItem{Integrated sensor data with \textbf{AWS IoT Core} for real-time monitoring}
-\resumeItem{Created dashboard for visualizing sensor metrics and system performance}
+\resumeItem{Integrated sensor data collection with \textbf{AWS IoT Core} for monitoring and analysis}
 \resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSubheading
-{Dynamic Financial Statement Platform}{}
-{\textbf{Java}, \textbf{Spring Boot}, \textbf{Angular}, \textbf{PostgreSQL}}{}
+
+\resumeProjectHeading{\textbf{Dynamic Financial Statement Platform} --- \textit{\textbf{Java}, \textbf{Spring Boot}, \textbf{Angular}, \textbf{PostgreSQL}}}{2023}
 \resumeItemListStart
-\resumeItem{Built web platform for creating and validating financial statements with \textbf{DMN} rule evaluation}
-\resumeItem{Implemented secure authentication and role-based access control}
+\resumeItem{Developed web platform for creating and validating financial statements with DMN rule evaluation}
+\resumeItem{Implemented secure authentication and role-based access control using \textbf{Spring Security}}
 \resumeItemListEnd
 
-\resumeSubheading
-{Distributed Log Processing System}{}
-{\textbf{Go}, \textbf{Kafka}, \textbf{Docker}}{}
+\resumeProjectHeading{\textbf{Distributed Log Processing System} --- \textit{\textbf{Go}, \textbf{Kafka}, \textbf{Docker}}}{2023}
 \resumeItemListStart
-\resumeItem{Designed real-time distributed system for log analytics using \textbf{Kafka} streams}
-\resumeItem{Implemented containerized microservices architecture with \textbf{Docker}}
+\resumeItem{Built real-time log analytics system using \textbf{Kafka} streams and containerized microservices}
+\resumeItem{Implemented fault-tolerant processing with data replication and automatic recovery}
 \resumeItemListEnd
 
-\resumeSubheading
-{Cloud Data Pipeline}{}
-{\textbf{Python}, \textbf{Apache Airflow}, \textbf{AWS S3}, \textbf{Redshift}}{}
+\resumeProjectHeading{\textbf{Cloud Data Pipeline} --- \textit{\textbf{Python}, \textbf{Apache Airflow}, \textbf{AWS S3}, \textbf{Redshift}}}{2023}
 \resumeItemListStart
-\resumeItem{Developed ETL pipeline for large-scale financial data processing}
-\resumeItem{Implemented automated data validation and error handling mechanisms}
+\resumeItem{Designed ETL pipeline for large-scale financial data processing using \textbf{AWS} services}
+\resumeItem{Implemented automated data quality checks and error handling mechanisms}
 \resumeItemListEnd
 
-\resumeSubheading
-{Real-Time Chat Application}{}
-{\textbf{Node.js}, \textbf{Express}, \textbf{Socket.io}, \textbf{MongoDB}}{}
+\resumeProjectHeading{\textbf{Real-Time Chat Application} --- \textit{\textbf{Node.js}, \textbf{Express}, \textbf{Socket.io}, \textbf{MongoDB}}}{2022}
 \resumeItemListStart
-\resumeItem{Built scalable chat platform with \textbf{WebSocket} communication}
-\resumeItem{Implemented message persistence and real-time notifications}
+\resumeItem{Built scalable chat platform with \textbf{WebSocket} communication and message persistence}
+\resumeItem{Implemented real-time notifications and message delivery status tracking}
 \resumeItemListEnd
+
+\resumeProjectHeading{\textbf{Medical Image Classifier} --- \textit{\textbf{Python}, \textbf{TensorFlow}, \textbf{FastAPI}}}{2022}
+\resumeItemListStart
+\resumeItem{Created CNN model achieving \textbf{92\%} accuracy in lung disease detection from X-rays}
+\resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{\item{
-    \textbf{Languages:} Java, Spring Boot, Python, FastAPI, C++, Go, JavaScript \\
-    \textbf{Technologies:} Docker, Kubernetes, PostgreSQL, MongoDB, Redis, Kafka, gRPC, REST APIs \\
-    \textbf{Frameworks:} Angular, React, TensorFlow \\
-    \textbf{Cloud \& Tools:} AWS, CI/CD, Git \\
-    \textbf{Certifications:} AWS Certified Cloud Practitioner, Oracle Certified Java Programmer, TensorFlow Developer Certificate \\
-    \textbf{Languages:} English (Fluent), French (Fluent), Arabic (Native)
+\textbf{Languages:} Java, Python, C++, Go, JavaScript \\
+\textbf{Frameworks \& Tools:} Spring Boot, FastAPI, Docker, Kubernetes, Angular, React, TensorFlow \\
+\textbf{Databases:} PostgreSQL, MongoDB, Redis \\
+\textbf{Cloud \& DevOps:} AWS, Git, CI/CD, Kafka \\
+\textbf{Concepts:} Microservices, RESTful APIs, GraphQL, Data Structures, Algorithms \\
+\textbf{Languages:} English (Fluent), French (Fluent), Arabic (Native)
 }}
 \end{itemize}
 
