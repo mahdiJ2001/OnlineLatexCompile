@@ -1,64 +1,192 @@
-It seems like you provided both a question and an answer. Since the answer is already given, I'll provide a concise LaTeX CV based on the provided information:
+\documentclass[letterpaper,11pt]{article}
 
-```latex
-\documentclass[11pt]{resumes}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
 
-\centering
-\huge{John Doe}
-\vspace{5pt}
-
+%----------HEADING----------
+\begin{center}
+\textbf{\Huge \scshape Mahdi Jellali} \\ \vspace{1pt}
 \small
-(123) 456-7890 \quad
-\href{mailto:john.doe@email.com}{john.doe@email.com} \quad
-\href{https://linkedin.com/in/johndoe}{linkedin.com/in/johndoe}
++21655402817 \quad
+\href{mailto:mahdijellali2001@gmail.com}{mahdijellali2001@gmail.com} \quad
+\href{https://github.com/mahdiJ2001}{github.com/mahdiJ2001} \quad
+\href{https://concise-code-display.vercel.app/}{concise-code-display.vercel.app} \quad
+\href{https://www.linkedin.com/in/mahdi-jellali/}{linkedin.com/in/mahdi-jellali}
+\end{center}
 
 \vspace{10pt}
-
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
-\resumeItem{Bachelor of Science in Computer Science}
-{University of California, Berkeley}{ Berkeley, CA}
-{2018 - 2022 (4.0 GPA)}
+\resumeSubheading
+{National School of Engineers of Tunis (ENIT)}{Tunis, Tunisia}
+{Bachelor’s in Software Engineering}{2021–2025}
+\resumeSubheading
+{Preparatory Institute for Engineering Studies of Sousse (IPEIS)}{Sousse, Tunisia}
+{Preparatory Cycle in Mathematics and Physics}{2019–2021}
+\resumeSubHeadingListEnd
+\section{Certifications}
+\resumeSubHeadingListStart
+\resumeSubSubheading
+{AWS Certified Cloud Practitioner}{}
+\resumeSubSubheading
+{Oracle Certified Java Programmer}{}
+\resumeSubSubheading
+{TensorFlow Developer Certificate}{}
 \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
-\resumeItem{Software Engineer}{Meta}{Remote}{Mar 2022 - Present}
-\item Implemented and maintained features in aReact-based frontend application using JavaScript and CSS.
-\item Optimized application performance, reducing load times by over 30\%.
-\item
-\resumeItem{Software Engineering Intern}{Google}{Mountain View, CA}{Jun 2021 - Aug 2021}
-\item Developed a Java-based backend system, improving query response times by 25\%.
-\item Contributed to team projects using phía Seeds.
-\item Gained experience with Google's code review process and collaborative environment.
+\resumeSubheading
+{Backend Developer Intern}{2024}
+{Whevoo}{Tunis, Tunisia}
+\resumeItemListStart
+\resumeItem{Contributed to a microservices-based patient management system using \textbf{Spring Boot}, \textbf{Kafka}, and \textbf{gRPC}}
+\resumeItem{Improved backend performance by implementing asynchronous event handling and optimizing serialization}
+\resumeItemListEnd
+\resumeSubheading
+{Software Engineering Intern}{2023}
+{TechLabs Tunisia}{Tunis, Tunisia}
+\resumeItemListStart
+\resumeItem{Developed RESTful APIs in \textbf{Java} for data synchronization between legacy and cloud systems}
+\resumeItem{Improved response times by 30\% through query optimization}
+\resumeItemListEnd
+\resumeSubheading
+{IoT Developer Intern}{2022}
+{SmartIoT Solutions}{Tunis, Tunisia}
+\resumeItemListStart
+\resumeItem{Built firmware for environmental sensors using \textbf{C++} and integrated real-time data streaming to \textbf{AWS IoT Core} with a monitoring dashboard}
+\resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeItem{E-commerce Web Application}{Personal Project}{Jan 2021 - Present}
-\item Built a full-stack e-commerce platform usingReact, Node.js, and MongoDB.
-\item Integrated user authentication and payment processing with Stripe.
-\item Deployed on AWS EC2 with a PostgreSQL database.
-\resumeItem{Machine Learning Model}{University Project}{Sep 2021 - Dec 2021}
-\item Trained a deep learning model to predict stock prices, achieving 85\% accuracy.
-\item Implemented in Python using TensorFlow and Keras.
+\resumeProjectHeading
+{\textbf{Smart Home Energy Monitor}}{2020}
+\resumeItemListStart
+\resumeItem{Built a smart energy monitoring system that collects power usage data and uploads it to \textbf{AWS IoT} for visualization}
+\resumeItem{Implemented using \textbf{C++}, \textbf{Arduino}, and \textbf{MQTT}}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{AI Resume Analyzer}}{2021}
+\resumeItemListStart
+\resumeItem{Created an AI resume analyzer that evaluates and matches resumes to job descriptions using \textbf{NLP}}
+\resumeItem{Built using \textbf{Python}, \textbf{FastAPI}, \textbf{Transformers}, and \textbf{OpenAI API}}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Distributed Log Processing System}}{2022}
+\resumeItemListStart
+\resumeItem{Implemented a real-time distributed system for log analytics using \textbf{Kafka streams}}
+\resumeItem{Developed in \textbf{Go} with \textbf{Docker} for containerization}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Quant Simulation Engine}}{2023}
+\resumeItemListStart
+\resumeItem{Built a high-performance trading simulation engine for algorithmic backtesting}
+\resumeItem{Implemented using \textbf{C++}, \textbf{ZeroMQ}, and \textbf{Redis}}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Real-Time Chat Application}}{2021}
+\resumeItemListStart
+\resumeItem{Developed a live chat platform with WebSocket communication and persistent storage}
+\resumeItem{Built using \textbf{Node.js}, \textbf{Express}, \textbf{Socket.io}, and \textbf{MongoDB}}
+\resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{\item{
-Programming Languages: \textbf{Python}, \textbf{Java}, \textbf{JavaScript}, \textbf{SQL}
-Frameworks: \textbf{React}, \textbf{Node.js}, \textbf{TensorFlow}
-Tools: \textbf{Git}, \textbf{Docker}, \textbf{AWS}, \textbf{PostgreSQL}
+\textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, Go, R} \\
+\textbf{Frameworks}{: Spring Boot, FastAPI, Angular, React, Node.js, Flask, Kafka, Material-UI} \\
+\textbf{Developer Tools}{: Git, Docker, CI/CD, AWS, Google Cloud Platform, VS Code, IntelliJ} \\
+\textbf{Libraries}{: TensorFlow, pandas, NumPy, Matplotlib, NLTK, OpenCV} \\
+\textbf{Other}{: REST APIs, gRPC, Microservices Architecture, Data Structures, Algorithms} \\
 }}
 \end{itemize}
 
 \end{document}
-```
-
-This LaTeX CV template follows the structure and styling you provided.
