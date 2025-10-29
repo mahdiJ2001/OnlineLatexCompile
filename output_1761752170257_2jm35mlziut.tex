@@ -1,0 +1,96 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{datetime}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.3in} % taller text area to reduce bottom gap
+
+\raggedbottom
+\raggedright
+\setlength{\parskip}{1.4em} % space between paragraphs
+\setlength{\parindent}{0pt} % no paragraph indentation
+\linespread{1.15} % line spacing
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{3pt}\scshape\raggedright\Large\color{MidnightBlue}
+}{}{0em}{}[\vspace{3pt}\color{MidnightBlue}\titlerule\vspace{6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\letterHeading}[5]{
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large #1} & #5 \\  % Right side is date
+    #2 & \\
+    #3 & \\
+    #4 & \\
+    \end{tabular*}
+    \vspace{15pt}
+}
+
+\newcommand{\letterRecipient}[3]{
+    \textbf{\large To:} #1 \\
+    \textbf{\large Position:} #2 \\
+    \textbf{\large Company:} #3 \\
+    \vspace{12pt}
+}
+
+\newcommand{\letterSubject}[1]{
+    \textbf{\large Subject:} #1 \\
+    \vspace{15pt}
+}
+
+%-------------------------------------------
+%%%%%%  COVER LETTER STARTS HERE  %%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+    \letterHeading
+    {Karim Haddad}
+    {Tunis, Tunisia}
+    {+216 559 032 47 \\ \href{mailto:mehdi.jellali@etudiant-enit.utm.tn}{mehdi.jellali@etudiant-enit.utm.tn}}
+    {\href{https://github.com/karimhaddad}{github.com/karimhaddad} $|$ \href{https://www.linkedin.com/in/karimhaddad}{linkedin.com/in/karimhaddad}}
+    {\today}
+
+%-----------RECIPIENT-----------
+    \letterRecipient
+    {Hiring Manager}
+    {Junior Embedded Software Engineer (IoT & C++)}
+    {Bosch Connected Devices, Stuttgart, Germany}
+
+%-----------SUBJECT-----------
+    \letterSubject{Application for Junior Embedded Software Engineer (IoT & C++) Position}
+
+%-----------BODY-----------
+    Dear Hiring Manager,
+
+    I am thrilled to apply for the Junior Embedded Software Engineer (IoT & C++) position at Bosch Connected Devices, where I can leverage my passion for IoT and C++ to contribute to innovative smart home solutions. With a strong foundation in embedded systems and a keen interest in the latest technologies, I am confident that I would thrive in your dynamic team.
+
+    Throughout my academic and professional journey, I have developed a solid understanding of C/C++ and embedded programming, which I believe are essential skills for this role. Notably, my experience with IoT platforms, such as Raspberry Pi, and my familiarity with communication protocols like MQTT, have prepared me to tackle the challenges of developing and optimizing embedded C++ code for microcontrollers. I am excited about the opportunity to work on low-level software development and collaborate with hardware engineers to integrate sensors and actuators.
+
+    My portfolio showcases a range of projects that demonstrate my skills and enthusiasm for IoT, machine learning, and software development. From developing an IoT-based parking system using ultrasonic sensors and Raspberry Pi to building an embedded system for monitoring household power consumption, I have consistently sought to push the boundaries of what is possible with technology. I am confident that my skills, experience, and passion for innovation make me an ideal candidate for this role.
+
+    I am particularly drawn to Bosch Connected Devices' commitment to creating intelligent, connected systems that enhance people's lives. I am impressed by the company's vision and values, and I am excited about the opportunity to be part of a team that is shaping the future of IoT. Thank you for considering my application. I would be delighted to discuss how my skills and experience align with your needs and how I can contribute to the success of Bosch Connected Devices.
+
+    Sincerely,\\[12pt]
+
+    Karim Haddad
+
+\end{document}
