@@ -1,0 +1,202 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+\textbf{\Huge \scshape Karim Haddad} \\ \vspace{1pt}
+\small
++216 5590 3247 \quad
+\href{mailto:mehdi.jellali@etudiant-enit.utm.tn}{mehdi.jellali@etudiant-enit.utm.tn} \quad
+\href{https://linkedin.com/in/karimhaddad}{linkedin.com/in/karimhaddad} \quad
+\href{https://github.com/karimhaddad}{github.com/karimhaddad} \quad
+\href{https://karimhaddad.dev}{karimhaddad.dev}
+\end{center}
+
+\vspace{20pt}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{National Institute of Applied Sciences and Technology (INSAT)}{Carthage, Tunisia}
+{Software Engineering Degree}{Sep. 2021 -- Present}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Software Engineer Intern}{Telnet Innovation Labs}{Tunis, Tunisia}
+{June 2024 – Sept 2024}
+\resumeItemListStart
+\resumeItem{Developed \textbf{C++} modules for embedded data acquisition in IoT-based telemetry systems}
+\resumeItem{Created a real-time monitoring dashboard using \textbf{Grafana} and \textbf{InfluxDB}}
+\resumeItem{Implemented IoT communication protocols (\textbf{MQTT}) for data transmission}
+\resumeItem{Worked with \textbf{Raspberry Pi} for embedded system development}
+\resumeItem{Containerized applications using \textbf{Docker} for deployment}
+\resumeSubItem{Collaborated with cross-functional teams for system integration and testing}
+\resumeItemListEnd
+\resumeSubheading
+{Machine Learning Intern}{InstaDeep}{Tunis, Tunisia}
+{July 2023 – Sept 2023}
+\resumeItemListStart
+\resumeItem{Built and trained \textbf{ML models} for predictive maintenance using \textbf{TensorFlow}}
+\resumeItem{Developed \textbf{REST APIs} with \textbf{FastAPI} for serving trained models}
+\resumeItem{Deployed models using \textbf{Docker} containers on \textbf{AWS EC2}}
+\resumeItem{Data processing and analysis using \textbf{Pandas} and \textbf{NumPy}}
+\resumeSubItem{Implemented automated data pipelines for model training}
+\resumeSubItem{Monitored model performance and optimized predictions}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Smart Parking System}}{IoT/C++}
+\resumeItemListStart
+\resumeItem{Developed IoT-based parking system using \textbf{ultrasonic sensors} and \textbf{Raspberry Pi}}
+\resumeItem{Implemented data transmission via \textbf{MQTT} protocol}
+\resumeItem{Visualized parking data using \textbf{Grafana}}
+\resumeItem{Stored sensor data in \textbf{InfluxDB} for real-time analytics}
+\resumeSubItem{Ensured system scalability for large parking lots}
+\resumeSubItem{Implemented automated parking slot management}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Home Energy Monitor}}{IoT/C++}
+\resumeItemListStart
+\resumeItem{Built embedded system using \textbf{Arduino} for power consumption monitoring}
+\resumeItem{Logged energy data in \textbf{InfluxDB} for historical analysis}
+\resumeItem{Implemented real-time energy usage visualization}
+\resumeItem{Optimized sensor accuracy for precise energy measurements}
+\resumeSubItem{Developed automated reporting system}
+\resumeSubItem{Ensured low power consumption of the monitoring system}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Image Classifier API}}{ML/AI}
+\resumeItemListStart
+\resumeItem{Developed \textbf{CNN model} using \textbf{TensorFlow} for medical image classification}
+\resumeItem{Deployed model as a \textbf{FastAPI} service on \textbf{AWS EC2}}
+\resumeItem{Implemented API endpoint for image classification}
+\resumeItem{Ensured model scalability for high request volumes}
+\resumeSubItem{Monitored API performance and optimized response times}
+\resumeSubItem{Documented API usage and integration guidelines}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Sentiment Analysis Dashboard}}{ML/AI}
+\resumeItemListStart
+\resumeItem{Built \textbf{NLP pipeline} using \textbf{Hugging Face Transformers}}
+\resumeItem{Visualized sentiment trends using \textbf{Streamlit}}
+\resumeItem{Analyzed product reviews for sentiment analysis}
+\resumeItem{Deployed dashboard for real-time sentiment monitoring}
+\resumeSubItem{Implemented automated data preprocessing}
+\resumeSubItem{Ensured accurate sentiment classification}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Financial Report Automation}}{Full Stack}
+\resumeItemListStart
+\resumeItem{Developed full-stack application using \textbf{Spring Boot} and \textbf{Angular}}
+\resumeItem{Automated validation of financial statements using \textbf{Camunda DMN}}
+\resumeItem{Implemented user authentication and authorization}
+\resumeItem{Ensured data security and integrity}
+\resumeSubItem{Developed RESTful APIs for backend services}
+\resumeSubItem{Created responsive UI for user interaction}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={]}
+\small{\item{
+\textbf{Languages}{: Java, \textbf{C++}, Python, TypeScript, SQL} \\
+\textbf{Frameworks}{: Spring Boot, Angular, FastAPI, TensorFlow, PyTorch} \\
+\textbf{Databases}{: PostgreSQL, MongoDB, InfluxDB, Redis} \\
+\textbf{Tools & Platforms}{: Docker, AWS, Git, Jenkins, Kafka, MQTT, Raspberry Pi, Arduino} \\
+\textbf{Concepts}{: Microservices, IoT, Machine Learning, Cloud Deployment, REST API Design, Clean Architecture} \\
+\textbf{Soft Skills}{: Teamwork, Problem Solving, Adaptability, Agile Development}}}
+\end{itemize}
+
+\end{document}
